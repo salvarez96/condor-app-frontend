@@ -1,0 +1,9 @@
+.parallax-background .parallax-img {
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
