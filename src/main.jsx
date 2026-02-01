@@ -17,14 +17,16 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header />
     <ParallaxBackground>
-      <Hero />
-      <TourDescription />
-      <RoadDetails />
-      <RouteDetails />
-      <RaceDetails />
-      <LogisticsDetails />
-      <GeneralRules />
-      <ClosingWords />
+      <main>
+        <Hero />
+        <TourDescription />
+        <RoadDetails />
+        <RouteDetails />
+        <RaceDetails />
+        <LogisticsDetails />
+        <GeneralRules />
+        <ClosingWords />
+      </main>
     </ParallaxBackground>
     <Footer />
   </StrictMode>

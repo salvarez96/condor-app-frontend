@@ -1,0 +1,32 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  /* height: 80px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-menu__container {
+  padding: 0 !important;
+  /* width: 50px; */
+  align-self: center;
+  justify-self: center;
+}
+
+.hamburger-menu {
+  color: white;
+  cursor: pointer;
+  /* width: 50px; */
+}
