@@ -17,9 +17,7 @@ function Header() {
     } else {
       setMenu(true)
       setTimeout(() => {
-        console.log(e);
-  
-        setAnchorEl(e.currentTarget)
+        setAnchorEl(menuOpenIcon.current)
       }, 100)
     }
   }
@@ -58,17 +56,30 @@ function Header() {
               onClose={() => handleClose(true)}
               slotProps={{
                 list: {
-                  'aria-labelledby': 'basic-button',
+                  'aria-labelledby': 'navigation',
                 },
+                paper: {
+                  sx: {
+                    backgroundColor: "rgba(255, 255, 255, 0.6)",
+                    backdropFilter: "blur(8px)",
+                    borderRadius: "4px",
+                    color: "white",
+                    textShadow: "2px 2px 4px rgba(0, 0, 0, 1)"
+                  }
+                }
               }}
             >
-              <MenuItem >Profile</MenuItem>
-              <MenuItem >My account</MenuItem>
-              <MenuItem >Logout</MenuItem>
+              <MenuItem >Bienvenida</MenuItem>
+              <MenuItem >Tour</MenuItem>
+              <MenuItem >Detalles del camino</MenuItem>
+              <MenuItem >Detalles de la ruta</MenuItem>
+              <MenuItem >Detalles de la carrera</MenuItem>
+              <MenuItem >Detalles de logística</MenuItem>
+              <MenuItem >Reglas generales</MenuItem>
+              <MenuItem >Cierre</MenuItem>
             </Menu>
           </CardContent>
         </Card>
-        {/* <h1>Header</h1> */}
       </div>
     </header>
   );
