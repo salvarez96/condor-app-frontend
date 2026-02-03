@@ -40,7 +40,7 @@ function Header() {
         >
           <CardMedia
             component="img"
-            height="65"
+            height="55"
             image="/public/assets/logos/logotipo blanco transparente_1.svg"
             alt="logotipo"
           />

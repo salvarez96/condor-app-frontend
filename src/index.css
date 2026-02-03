@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -74,11 +80,9 @@ button:focus-visible {
 
 main {
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 75px auto 0;
 }
-/* .parallax-background {
-} */
 
 h1 {
   color: white;

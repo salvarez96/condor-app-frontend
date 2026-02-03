@@ -7,3 +7,9 @@
   left: 0;
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .parallax-background {
+    padding: 0 12px 0;
+  }
+}
