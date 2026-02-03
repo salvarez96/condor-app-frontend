@@ -1,6 +1,42 @@
 .hero {
-  height: 100dvh;
+  height: calc(100dvh - 75px);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.hero-title {
+  margin-top: 50px;
+  align-self: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.condor {
+  color: #4fc0d4;
+}
+
+.hero-card {
+  margin-bottom: 50px;
+}
+
+.hero-card-text {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 50px 0 50px;
+  }
+
+  .hero-title {
+    margin-top: 20px;
+    font-size: 4rem;
+  }
+
+  .hero-card-text {
+    font-size: 1.5rem;
+  }
 }
