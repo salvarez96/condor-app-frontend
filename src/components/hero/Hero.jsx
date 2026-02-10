@@ -1,11 +1,20 @@
 import { Card, CardContent } from '@mui/material';
 import './hero.css'
+import { useEffect, useState } from 'react';
 
 function Hero() {
+  const [beganScroll, setBeganScroll] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setBeganScroll(window.scrollY > 0)
+    })
+  }, [])
+
   return (
     <section className="hero">
-      <h1 className='hero-title'>Tour del <span className="condor">Condor</span></h1>
-      <div className="hero-card">
+      <h1 className={`hero-title ${!beganScroll ? 'animate__animated animate__rollIn' : 'animate__animated animate__fadeOutLeft'}`}>Tour del <span className="condor">Condor</span></h1>
+      <div className={`hero-card ${!beganScroll ? 'animate__animated animate__rollIn' : 'animate__animated animate__fadeOutDownBig'}`}>
           <Card
             sx={{
               display: "flex",

@@ -11,6 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --animate-duration: 800ms;
+  --animate-delay: 0.4s;
 }
 
 * {
@@ -86,4 +89,8 @@ main {
 
 h1 {
   color: white;
+}
+
+.animate__animated {
+  animation-duration: 500ms !important;
 }
