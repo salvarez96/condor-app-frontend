@@ -1,6 +1,9 @@
 .tour-description {
-  font-size: 18px;
-  margin-top: 200px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: relative;
+  font-size: 16px;
+  /* margin-top: 200px; */
   color: #1A1A1A;
   /* position: sticky;
   top: 90px; */
@@ -19,4 +22,52 @@
   height: 4px;
   background-color: #4fc0d4;
   margin: 20px auto;
+}
+
+/* .feature__card {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
+
+.animate__animated {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loader-container {
+  width: 280px;
+  height: 4px;
+  position: sticky;
+  top: 300px;
+  display: flex;
+  gap: 20px;
+  transform: rotate(90deg) translateY(110px);
+  /* opacity: 0; */
+}
+
+.opacity {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .loader-container {
+    transform: rotate(90deg) translateY(80px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .tour-description {
+    font-size: 18px;
+  }
+
+  .loader-container {
+    transform: rotate(90deg) translateY(-525px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .loader-container {
+    transform: rotate(90deg) translateY(-525px);
+  }
 }
